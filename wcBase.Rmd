@@ -65,39 +65,3 @@ knitr::read_chunk("code/makechart.r")
 
 ```
 
-Module 4 - Lesson: Create an R Package with an R Markdowm Template
-
-R code used to setup and create an R package
-
-setwd("C:/RepTemplates")
-
-library(devtools)
-
-devtools::create(“WCtemplatePackage”)
-
-dir.create("inst/rmarkdown/templates/weather/skeleton", recursive = TRUE)
-
-
-
-Text for "template/yaml"
-
-name: Weather Check Report
-
-
-
-R code to install package
-
-devtools::install(“WCtemplatePackage”)
-
-
-Text for the updated readme.md file - be sure to use your github account name instead of melindahiggins2001
-
-This R package provides an R markdown template for creating a report from the Weather Check dataset from the `fivethirtyeight` R package. 
-
-To install the development version of this package from Github, you may use the `devtools` package to run this R code `devtools::install_github('melindahiggins2001/WCtemplatePackage')`.
-
-
-
-R code to install from Github - again use your Github account name instead of melindahiggins2001
-
-devtools::install_github('melindahiggins2001/WCtemplatePackage')
